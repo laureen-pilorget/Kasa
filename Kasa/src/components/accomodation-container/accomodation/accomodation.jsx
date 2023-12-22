@@ -3,6 +3,7 @@ import Host from './../host/host';
 import Rate from './../rate/rate';
 import Tags from './../tags/tags';
 import Title from './../title/title';
+import './accomodation.scss';
 
 const Accomodation = () => {
     return(

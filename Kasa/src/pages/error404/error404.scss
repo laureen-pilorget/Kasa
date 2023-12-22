@@ -1,0 +1,24 @@
+@import './../../utilities/global.scss';
+
+.mainError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 139px;
+    padding-top: 139px;
+    padding-bottom: 139px;
+    color: $main-color;
+    .error404 {
+        font-size: $error;
+        font-weight: $error404;
+}
+    .text {
+        color: $main-color;
+        font-size: $title;
+    }
+    .error__link {
+        color: $main-color;
+        text-decoration: underline;
+        font-size: $text;
+    }
+}
