@@ -1,0 +1,19 @@
+@import './../../utilities/global.scss';
+
+.footer {
+    display : flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: $footer-background;
+    color: $second-color;
+    gap: 28px;
+    padding-top: 66px;
+    padding-bottom: 29px;
+    .reserved {
+        color: $second-color;
+        font-size: $nav-footer;
+    }
+    .logoBW {
+        width: 122px;
+    }
+}
