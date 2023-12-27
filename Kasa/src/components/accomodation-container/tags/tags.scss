@@ -1,1 +1,20 @@
-@import './../../../utilities/global.scss'
+@import './../../../utilities/global.scss';
+
+.tagsBox {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 20px;
+
+    .tags {
+        width: 115px;
+        height: 25px;
+        background: $cards-background;
+        font-size: 14px;
+        color: $second-color;
+        border-radius: $radius-cards;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

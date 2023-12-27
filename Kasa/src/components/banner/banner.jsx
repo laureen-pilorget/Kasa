@@ -1,12 +1,12 @@
 import React from 'react';
 import './banner.scss';
 
-const Banner = ({imgBanner,textBanner}) => {
+const Banner = ({bannerImg,bannerText}) => {
     return(
         <div className='bannerBox'>
-            <div className='filter'></div>
-                <img src={imgBanner} alt='paysage'className='imgBanner'></img>
-                <p className='textBanner'>{textBanner}</p>
+            <div className='bannerBox__filter'></div>
+            <img src={bannerImg} alt='paysage'className='bannerBox__img'></img>
+            <p className='bannerBox__text'>{bannerText}</p>
         </div>
     )
 }

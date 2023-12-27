@@ -1,1 +1,12 @@
 @import './../../../utilities/global.scss';
+
+.sectionCards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #F6F6F6;
+    border-radius: $main-radius;
+    padding: 56px 50px 43px 50px;
+    row-gap: 50px;
+    column-gap: 60px;
+}

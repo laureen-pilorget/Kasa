@@ -1,1 +1,12 @@
-@import './../../../utilities/global.scss'
+@import './../../../utilities/global.scss';
+
+.rateStars {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    .stars{
+        width: 24px;
+        height: 24px;
+    }
+}

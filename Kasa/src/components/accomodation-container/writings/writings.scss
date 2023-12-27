@@ -1,0 +1,14 @@
+@import './../../../utilities/global.scss';
+
+
+.text {
+    color: $main-color;
+    
+    .writingsTitle {
+    font-size: $title;
+}
+
+.writingsText {
+    font-size: $text;
+}
+}

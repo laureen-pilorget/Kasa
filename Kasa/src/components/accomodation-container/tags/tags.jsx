@@ -1,9 +1,12 @@
 import React from 'react';
+import './tags.scss';
 
-const Tags = () => {
+const Tags = ({tags}) => {
     return(
-        <div>
-            <p>Ici la section de tags</p>
+        <div className='tagsBox'>
+            <p className='tags'>{tags}</p>
+            <p className='tags'>{tags}</p>
+            <p className='tags'>{tags}</p>
         </div>
     )
 }

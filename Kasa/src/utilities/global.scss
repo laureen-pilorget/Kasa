@@ -1,4 +1,4 @@
-/****************couleur***************/
+/**************** COLOR ***************/
 
 $main-color : #FF6060;
 
@@ -6,36 +6,34 @@ $second-color : white;
 
 $cards-background : #FF6060;
 
-$footer-background : #000000;
 
-
-/****************font-size***************/
+/************** FONT-SIZE *************/
 
 $nav-footer : 24px;
 $banner : 48px;
 $title : 36px;
 $text : 18px;/*subtitle-host-collaps_accomodation-link*/
 $tags : 14px;
-$error : 288px;
 $collaps_about : 24px;
 
-/****************font-weigth***************/
 
+/************* FONT-WEIGHT ************/
 
 $home : 500;
-$error404 : 700;
 
-/****************gradient***************/
+
+/************** GRADIENT *************/
 
 $linear-gradient-cards : linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
 
 
+/*************** RADIUS **************/
 
-/****************radius***************/
-
-$radius : 25px;
+$main-radius : 25px;
 $radius-cards : 10px;
 
+
+/*************** MIXIN **************/
 
 @mixin banner {
     opacity: 0.3;

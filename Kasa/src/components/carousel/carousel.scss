@@ -1,1 +1,33 @@
 @import './../../utilities/global.scss';
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+    border-radius: $main-radius;
+    width: 1240px;
+    height: 415px;
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    &__vector {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 2;
+        padding: 23px;
+        .vector {
+            width: 46px;
+            height: 79px;
+            justify-content: center;
+        }
+    }
+}
