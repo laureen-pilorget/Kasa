@@ -14,7 +14,7 @@ const Path = () => (
             <Route path= "/" element={<Home/>} />
             <Route path= "/About" element={<About/>}/>
             <Route path= "*" element={<Error404/>}/>
-            <Route path= "/Accomodations/" element={<Accomodations/>}/>
+            <Route path= "/Accomodations/:id" element={<Accomodations/>}/>
         </Routes>
         <Footer/>
     </Router>

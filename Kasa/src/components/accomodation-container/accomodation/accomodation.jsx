@@ -4,24 +4,18 @@ import Rate from './../rate/rate';
 import Tags from './../tags/tags';
 import Writings from './../writings/writings';
 import './accomodation.scss';
-import HostImgProfil from './../../../assets/the-everygirl-june-tech-23-desktop-ted-1.jpg';
 
 
-const title='tata';
-const text='toto';
-const tags='lorem';
-const name='titi';
-
-const Accomodation = () => {
+const Accomodation = ({data}) => {
     return(
         <div className='accomodationBox'>
             <div className='writingsTags'>
-                <Writings writingsTitle={title} writingsText={text}/>
-                <Tags tags={tags}/>
+                <Writings writingsTitle={data.title} writingsText={data.location}/>
+                <Tags tagList={data.tags}/>
             </div>
             <div className='hostRate'>
-                <Host hostName={name} hostImg={HostImgProfil}/>
-                <Rate />
+                <Host hostName={data.host.name} hostImg={data.host.picture}/>
+                <Rate numberOfStars={data.rating}/>
             </div>
         </div>
     )

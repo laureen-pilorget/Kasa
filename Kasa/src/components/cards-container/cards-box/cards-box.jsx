@@ -1,19 +1,24 @@
 import React from 'react';
 import Card from './../card/card';
 import './cards-box.scss';
-import img from './../../../assets/the-everygirl-june-tech-23-desktop-ted-1.jpg';
+import DataBase from './../../../db.json';
+import { NavLink } from 'react-router-dom';
 
-const title = 'ici le titre';
+
 const CardsBox = () => {
     return(
         <div className='sectionCards'>
-            <Card cardImg={img} cardTitle={title}/>
-            <Card cardImg={img} cardTitle={title}/>
-            <Card cardImg={img} cardTitle={title}/>
-            <Card cardImg={img} cardTitle={title}/>
-            <Card cardImg={img} cardTitle={title}/>
-            <Card cardImg={img} cardTitle={title}/>
+            {/* On parcourt le fichier JSON pour retourner l'ID correspondant */}
+            {DataBase.map((data) =>
+                <NavLink key={data.id} to={`/Accomodations/${data.id}`}>
+                    {/* Pour le bon ID, on retourne l'image et le titre qui lui sont assignés */}
+                    <Card cardImg={data.cover} cardTitle={data.title}/>
+                </NavLink>
+                )}
         </div>
     )
 }
+
 export default CardsBox
+
+

@@ -5,7 +5,7 @@
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    justify-content: end;
+    justify-content: flex-end;
 
     .hostText {
         color: $main-color;

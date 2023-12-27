@@ -1,19 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './carousel.scss';
-import Img from './../../assets/the-everygirl-june-tech-23-desktop-ted-1.jpg';
 import VectorLeft from './../../assets/vector_left.png';
 import VectorRight from './../../assets/vector_right.png';
 
-const Carousel = () => {
+
+
+const Carousel = ({img}) => {
+    // Utilisation du hook useState pour rendre visible ou non les images
+    const [imgIndex, setImgIndex] = useState(0);
     return(
         <div className='carousel'>
             <div className='carousel__vector'>
                 <img src={VectorLeft} alt='flèche gauche' className='vector'></img>
                 <img src={VectorRight} alt='flèche droite' className='vector'></img>
             </div>
-            <img src={Img} alt='accomodation' className='carousel__img'></img>
+            {/* On retourne le tableau d'images  */}
+            <img src={img [imgIndex]} alt='accomodation' className='carousel__img'></img>
         </div>
-        
     )
 }
 

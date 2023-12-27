@@ -1,9 +1,11 @@
 @import './reset.scss';
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@500&family=Raleway:wght@400;600;700&family=Shadows+Into+Light+Two&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Montserrat:wght@400;500;700&family=Raleway:wght@400;600;700&family=Shadows+Into+Light+Two&display=swap');
+@import './global.scss';
 
 body {
     font-family: 'Montserrat', sans-serif;
     margin-top: 45px;
+    font-weight: $home;
 }
 
 header, main {

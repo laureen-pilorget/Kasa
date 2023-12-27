@@ -23,8 +23,15 @@
         color: $main-color;
         font-size: $text;
         font-weight: 400;
-        padding: 20px;
         border-radius: 5px;
     }
+    &__text__array {
+        background-color: #F6F6F6;
+        color: $main-color;
+        font-size: $text;
+        font-weight: 400;
+        padding: 20px;
+        border-radius: 5px;
+        
+    }
 }
-
