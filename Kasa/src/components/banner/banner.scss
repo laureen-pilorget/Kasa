@@ -7,25 +7,27 @@
     width: 1240px;
     position: relative;
     overflow: hidden;
-    border-radius: $radius;
+    border-radius: $main-radius;
     justify-content: center;
     align-items: center;
+    
+    &__filter{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        @include banner;
+    }
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__text {
+        position: absolute;
+        color: $second-color;
+        font-size: $banner;
+    }
 }
 
-.filter{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    @include banner;
-}
-.imgBanner {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.textBanner {
-    position: absolute;
-    color: $second-color;
-    font-size: $banner;
-}

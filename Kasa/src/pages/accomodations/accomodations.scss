@@ -1,1 +1,14 @@
-@import './../../../utilities/global.scss'
+@import './../../utilities/global.scss';
+
+.mainAccomodations {
+    margin: 50px auto 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.accomodations__collaps{
+    display: flex;
+    flex-direction: row;
+    gap: 76px;
+    justify-content: space-between;
+}

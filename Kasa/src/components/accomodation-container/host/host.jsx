@@ -1,9 +1,11 @@
 import React from 'react';
+import './host.scss';
 
-const Host = () => {
+const Host = ({hostName, hostImg}) => {
     return(
-        <div>
-            <p>Ici la section d'hébergeur</p>
+        <div className='host'>
+            <p className='hostText'>{hostName}</p>
+            <img src={hostImg} alt='Image de profil' className='hostImg'></img>
         </div>
     )
 }

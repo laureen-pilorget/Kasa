@@ -1,12 +1,24 @@
 import React from 'react';
-import Cards from './../cards/cards';
+import Card from './../card/card';
+import './cards-box.scss';
+import DataBase from './../../../db.json';
+import { NavLink } from 'react-router-dom';
+
 
 const CardsBox = () => {
     return(
-        <div>
-            <p>Ici la box des cards</p>
-            <Cards />
+        <div className='sectionCards'>
+            {/* On parcourt le fichier JSON pour retourner l'ID correspondant */}
+            {DataBase.map((data) =>
+                <NavLink key={data.id} to={`/Accomodations/${data.id}`}>
+                    {/* Pour le bon ID, on retourne l'image et le titre qui lui sont assignés */}
+                    <Card cardImg={data.cover} cardTitle={data.title}/>
+                </NavLink>
+                )}
         </div>
     )
 }
+
 export default CardsBox
+
+

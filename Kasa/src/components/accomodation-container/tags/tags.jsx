@@ -1,9 +1,14 @@
 import React from 'react';
+import './tags.scss';
 
-const Tags = () => {
+
+const Tags = ({tagList}) => {
     return(
-        <div>
-            <p>Ici la section de tags</p>
+        <div className='tagsBox'>
+            {/* On parcourt la liste des tags pour les retourner */}
+            {tagList.map((tags, index) =>
+                    <p className='tags' key={index}>{tags}</p>
+                )}
         </div>
     )
 }
