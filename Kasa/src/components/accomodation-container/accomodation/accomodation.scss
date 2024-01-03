@@ -11,7 +11,7 @@
     }
 
     .hostRate {
-        gap: 21px;
+        justify-content: space-between;
     }
 
     .rate {
@@ -21,22 +21,16 @@
 
 // MEDIA QUERIES //
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .accomodationBox {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         gap: 16px;
 
-        .writingsTags, .hostRate {
-            display: flex;
-            flex-direction: column;
-        }
-
         .hostRate {
-            justify-content: space-between;
-            display: flex;
             flex-direction: row-reverse;
+            gap: 3px;
         }
     }
 }

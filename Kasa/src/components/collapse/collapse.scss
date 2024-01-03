@@ -11,8 +11,7 @@
         justify-content: space-between;
         border-radius: 5px;
         padding: 10px 20px 10px 15px;
-        overflow: hidden; // Cache le contenu qui dépasse
-        // transition: max-height 3s ease;
+        overflow: hidden;
     }
     
     &__title {
@@ -32,46 +31,18 @@
         font-size: $text;
         font-weight: 400;
         border-radius: 5px;
-        padding: 20px;
-    }
-    &__text__array {
-        transition: max-height 3s ease;
+        overflow: hidden;
+        transition: all 1s ease;
         max-height: 0px;
-        // padding: 20px;
+        padding: 0px 20px;
     }
-
-    // &__text {
-    //     color: blue;
-    //     max-height: 0px;
-    //     transition: max-height 3s ease;
-    // }
 
     .visibleText {
-        // color: purple;
-        max-height: 300px;
-        // transition: max-height 3s ease;
+        max-height: 200px;
+        padding: 20px;
     }
 
-
-
-
-
-    
-    // &.visibleText { 
-    // }
-
 }
-// .collapsed {
-//     max-height: 0px;
-//     transition: max-height 3s ease;
-// }
-
-// .visible{
-//     transition: max-height 0.6s ease;
-//     max-height: 0px;
-
-// transition: max-height 0.6s ease;
-// }
 
 .rotate {
     transform: rotate(-180deg);
@@ -83,7 +54,7 @@
 
 // MEDIA QUERIES //
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .collapse {
         width: auto;
         .visible {

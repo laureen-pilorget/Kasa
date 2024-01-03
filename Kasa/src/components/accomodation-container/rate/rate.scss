@@ -15,9 +15,9 @@
 
 // MEDIA QUERIES //
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .rateStars {
-        height: 18px;
+        height: $text;
         align-self: center;
     }
 }
