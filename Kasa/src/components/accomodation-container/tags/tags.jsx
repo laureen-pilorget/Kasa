@@ -4,12 +4,12 @@ import './tags.scss';
 
 const Tags = ({tagList}) => {
     return(
-        <div className='tagsBox'>
+        <ul className='tagsBox'>
             {/* On parcourt la liste des tags pour les retourner */}
             {tagList.map((tags, index) =>
-                    <p className='tags' key={index}>{tags}</p>
+                    <li className='tags' key={index}>{tags}</li>
                 )}
-        </div>
+        </ul>
     )
 }
 

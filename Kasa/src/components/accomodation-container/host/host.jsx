@@ -1,6 +1,7 @@
 import React from 'react';
 import './host.scss';
 
+
 const Host = ({hostName, hostImg}) => {
     return(
         <div className='host'>

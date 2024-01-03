@@ -18,3 +18,13 @@
     border-radius: 50%;
     }
 }
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 800px) {
+    .hostText {
+        font-size: 12px;
+        text-align: end;
+    }
+}

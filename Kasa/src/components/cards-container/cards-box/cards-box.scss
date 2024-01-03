@@ -10,3 +10,16 @@
     row-gap: 50px;
     column-gap: 60px;
 }
+
+// MEDIA QUERIES //
+
+@media (max-width: 800px) {
+    .sectionCards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background: none;
+        gap: 20px;
+        justify-content: center;
+        padding: 0px;
+    }
+}

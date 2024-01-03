@@ -1,6 +1,7 @@
 import React from 'react';
 import './banner.scss';
 
+
 const Banner = ({bannerImg,bannerText}) => {
     return(
         <div className='bannerBox'>

@@ -4,15 +4,10 @@ import './collapse.scss';
 import { useState } from 'react';
 
 
-
 const Collapse = ({ collapseTitle, collapseText }) => {
     const [isCollapsed, setIsCollapsed] = useState(false);
-    // const handleCollapse = () => {
-    //   isNotCollapsed(!isCollapsed);
-    // };
     return (
       <div className={`collapse ${isCollapsed ? 'collapsed' : ''}`}>
-        
         <div className='visible' >
           <div className='collapse__title'>{collapseTitle}</div>
           {/* <div ></div> */}

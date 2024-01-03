@@ -8,17 +8,44 @@
     padding-top: 139px;
     padding-bottom: 139px;
     color: $main-color;
+
     .error404 {
         font-size: 288px;
         font-weight: 700;
-}
+    }
+
     .text {
         color: $main-color;
         font-size: $title;
     }
+
     .error__link {
         color: $main-color;
         text-decoration: underline;
         font-size: $text;
+    }
+}
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 800px) {
+
+    .mainError {
+        padding: 113px 0px 113px 0px;
+        gap: 113px;
+
+        .error404 {
+            font-size: 96px;
+        }
+
+        .text {
+            font-size: $text;
+            text-align: center;
+        }
+
+        .error__link {
+            font-size: $tags;
+        }
     }
 }

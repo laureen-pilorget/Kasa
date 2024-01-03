@@ -4,6 +4,7 @@ import CardsBox from './../../components/cards-container/cards-box/cards-box';
 import bannerImg from './../../assets/img-banniere.png';
 import './home.scss';
 
+
 const Home = () => {
     return(
         <main className='mainHome'>
@@ -16,4 +17,5 @@ const Home = () => {
         </main>
     )
 }
+
 export default Home

@@ -5,12 +5,30 @@
     flex-direction: column;
     margin: 38px auto 38px auto;
     gap: 38px;
-}
-
-.about__collaps {
+    
+    &__collapse {
     width: 1023px;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    }
+}
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 800px) {
+
+    .mainAbout {
+        margin: 19px 19px 19px 19px;
+        gap: 19px;
+        width: auto;
+
+        &__collapse {
+            gap: 20px;
+            width: auto;
+            margin: 0px;
+        }
+    }
 }

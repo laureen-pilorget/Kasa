@@ -20,4 +20,5 @@ const Accomodation = ({data}) => {
         </div>
     )
 }
+
 export default Accomodation

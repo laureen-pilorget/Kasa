@@ -1,6 +1,7 @@
 import React from 'react';
 import './writings.scss';
 
+
 const Writings = ({writingsTitle, writingsText}) => {
     return(
         <div className='text'>
