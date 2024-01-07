@@ -4,9 +4,20 @@
     display: flex;
     flex-direction: row;
     gap: 10px;
+    justify-content: flex-end;
 
     .stars{
         width: 24px;
         height: 24px;
+    }
+}
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+    .rateStars {
+        height: $text;
+        align-self: center;
     }
 }

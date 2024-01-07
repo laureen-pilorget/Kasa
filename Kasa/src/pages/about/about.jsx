@@ -31,7 +31,7 @@ const About = () => {
             <section className='about__banner'>
                 <Banner bannerImg={MountainImg}/>
             </section>
-            <section className='about__collaps'>
+            <section className='mainAbout__collapse'>
                 {/* On parcourt le tableau créé précédemment */}
                 {collapseArray.map((data,index) =>(
                     // On récupère le titre et le texte pour chaque collaps

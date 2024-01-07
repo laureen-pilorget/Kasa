@@ -9,11 +9,35 @@
     gap: 28px;
     padding-top: 66px;
     padding-bottom: 29px;
+
     .reserved {
         color: $second-color;
         font-size: $nav-footer;
     }
+
     .logoBW {
         width: 122px;
     }
 }
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+
+    .footer {
+        padding-bottom: 58px;
+        gap: 0px;
+
+        .reserved {
+            display: flex;
+            font-size: 12px;
+            padding-left: 121px;
+            padding-right: 120px;
+            height: 46px;
+            align-items: flex-end;
+            text-align: center;
+        }
+    }
+}
+

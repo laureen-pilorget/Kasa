@@ -3,6 +3,7 @@ import './rate.scss';
 import Star from './../../../assets/rate_star.png';
 import ColorStar from './../../../assets/rate_star_color.png';
 
+
 const Rate = ({numberOfStars}) => {
     return(
         <div className='rateStars'>

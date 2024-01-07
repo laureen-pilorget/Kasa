@@ -8,8 +8,6 @@ import DataBase from './../../db.json';
 import Error404 from './../error404/error404';
 
 
-
-
 const Accomodations = () => {
     // Utilisation du hook useParams pour aller chercher le bon ID 
     const {id} = useParams()
@@ -38,7 +36,7 @@ const Accomodations = () => {
             <section className='accomodations__accomodationContainer'>
                 <Accomodation data={data}/>
             </section>
-            <section className='accomodations__collaps'>
+            <section className='mainAccomodations__collapse'>
                 {/* On parcourt le tableau créé précédemment */}
                 {accomodationsArray.map((data,index) =>(
                     // Et on en récupère le titre et la description pour l'afficher dans les collaps
@@ -48,4 +46,5 @@ const Accomodations = () => {
         </main>
     )
 }
+
 export default Accomodations

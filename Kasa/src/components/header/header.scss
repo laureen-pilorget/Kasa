@@ -4,19 +4,51 @@
     display : flex;
     justify-content: space-between;
     align-items: center;
+
     .menu {
     display: flex;
     gap: 57px;
     }
+
     &__link {
     color: $main-color;
     font-size: $nav-footer;
     }
+
     .logo {
     height: 68px;
     }
+
     .active {
         text-decoration: underline;
+    }
+}
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+
+    .header {
+        margin-top: 20px;
+        padding: 0px 20px 0px 20px;
+
+        &__link {
+            font-size: 12px;
+            margin: 0px;
+            display: flex;
+            justify-content: center;
+        }
+    
+        .logo {
+            height: 4vh;
+        }
+    
+        .menu {
+            display: flex;
+            gap: 26px;
+            text-transform: uppercase;
+        }
     }
 }
 

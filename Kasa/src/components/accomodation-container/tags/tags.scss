@@ -18,3 +18,20 @@
         align-items: center;
     }
 }
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+    .tagsBox {
+        margin-top: 10px;
+        flex-wrap: wrap;
+
+        .tags {
+            font-size: 10px;
+            border-radius: 5px;
+            padding: 3px 37px 2px 37px;
+            height: auto;
+        }
+    }
+}

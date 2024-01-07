@@ -6,9 +6,27 @@
     
     .writingsTitle {
     font-size: $title;
+    }
+
+    .writingsText {
+        font-size: $text;
+    }
 }
 
-.writingsText {
-    font-size: $text;
-}
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+
+    .text {    
+
+        .writingsTitle {
+        font-size: $text;
+        }
+        
+        .writingsText {
+            font-size: $tags;
+        }
+    }
 }

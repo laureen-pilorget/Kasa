@@ -5,10 +5,27 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    &__collapse{
+        display: flex;
+        flex-direction: row;
+        gap: 76px;
+        justify-content: space-between;
+    }
 }
-.accomodations__collaps{
-    display: flex;
-    flex-direction: row;
-    gap: 76px;
-    justify-content: space-between;
+
+
+// MEDIA QUERIES //
+
+@media (max-width: 768px) {
+
+    .mainAccomodations {
+        margin: 27px 20px 27px 20px;
+        gap: 15px;
+        
+        &__collapse {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
 }

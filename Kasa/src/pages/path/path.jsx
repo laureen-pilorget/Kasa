@@ -7,6 +7,7 @@ import Accomodations from './../accomodations/accomodations';
 import Header from './../../components/header/header';
 import Footer from './../../components/footer/footer';
 
+
 const Path = () => (
     <Router>
         <Header/>
